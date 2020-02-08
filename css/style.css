@@ -1,204 +1,300 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-    font-family: OpenSans-Bold;
-    src: url("../fonts/OpenSans-Bold.woff");
-    font-weight: 700;
-    font-style: normal;
+  font-family: OpenSans-Bold;
+  src: url("../fonts/OpenSans-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: OpenSans-Regular;
-    src: url("../fonts/OpenSans-Regular.woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: OpenSans-Regular;
+  src: url("../fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
-.header, .page-content {
-    width: 320px;
-    margin: 0 auto;
-    box-sizing: border-box;    
+.header,
+.page-content {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.header, .players-title, .content-section {
-    padding-left: 20px;
-    padding-right: 20px;
+.header,
+.players-title,
+.content-section {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    padding-top: 33px;
-        
-    background-image: url("../images/football_767.jpg");
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: top center;            
-    color: #ffffff;    
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 33px;
+
+  background-image: url("../images/football_767.jpg");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: top center;
+  color: #ffffff;
 }
 
 .header::after {
-    content: "";
-    position: absolute;
-    background-color: #212548;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.9;
+  content: "";
+  position: absolute;
+  background-color: #212548;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
 }
 
 .header-content {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;       
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
-    width: 133px;
-    height: 36px;
-    align-self: center;    
+  width: 133px;
+  height: 36px;
+  align-self: center;
 }
 
 .header-content-block {
-    width: 280px;
-    margin-top: 124px;
+  width: 280px;
+  margin-top: 124px;
 }
 
 .main-title {
-    font-family: OpenSans-Bold;
-    font-size: 28px;
-    text-transform: uppercase;
-    font-kerning: normal;
+  font-family: OpenSans-Bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-kerning: normal;
 }
 
 a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 h2.main-title {
-    margin-top: 10px;    
-    margin-left: 44px;
+  margin-top: 10px;
+  margin-left: 44px;
 }
 
 .store-buttons {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    width: 280px;
-    margin-top: 80px;
-    margin-bottom: 84px;
+  width: 280px;
+  margin-top: 80px;
+  margin-bottom: 84px;
 }
 
 .store-button {
-    display: block;
-    display: flex;
-    align-items: center;
-    padding-left: 82px;    
+  display: block;
+  display: flex;
+  align-items: center;
+  padding-left: 82px;
 
-    background-color: #5942b0; 
-    font-size: 8px;   
-    text-transform: uppercase;
-    color: #ffffff;
-    height: 35px;
-    border: none;
-    border-radius: 15px;    
+  background-color: #5942b0;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  height: 35px;
+  border: none;
+  border-radius: 15px;
 }
 
-.store-button:nth-child(1n+2) {
-    margin-top: 14px;
+.store-button:nth-child(1n + 2) {
+  margin-top: 14px;
 }
 
-.appstore, .google-play {
-    display: inline-block;
-    fill: #ffffff;
-    width: 20px;
-    height: 24px;
+.appstore,
+.google-play {
+  display: inline-block;
+  fill: #ffffff;
+  width: 20px;
+  height: 24px;
 }
 
 .button-text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  text-align: left;
 }
 
 .download-call {
-    font-family: OpenSans-Regular;
+  font-family: OpenSans-Regular;
 }
 
 .store-name {
-    font-family: OpenSans-Bold;
+  font-family: OpenSans-Bold;
 }
 
 .athlets-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
 }
 
 .players-title {
-    font-family: OpenSans-Bold;
-    font-size: 50px;
-    text-transform: uppercase;
-    color: #e7e7e7;
-    margin-top: 8px;    
+  font-family: OpenSans-Bold;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-top: 8px;
 }
 
-.footballer-picture {
-    position: absolute;
-    z-index: 1;
+.picture-block {
+  display: flex;
+  justify-content: center;
 }
 
 .content-section {
-    position: relative;
-
-    margin-top: 226px;
-    padding-top: 83px;
-    padding-bottom: 50px;    
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 
 .connection {
-    background-color: #fafafa;
+  background-color: #fafafa;
+  padding-top: 70px;
+}
+
+.collaboration {
+  background-color: #f5f4f9;
+}
+
+.growth {
+  background-color: #5e42b0;
+}
+
+.growth-dark {
+  background-color: #080a33;
 }
 
 .subtitle-block {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;      
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.number-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .number {
-    font-family: OpenSans-Bold;
-    font-size: 14px;
-    margin-right: 10px;
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  margin-right: 10px;
+  color: #000000;
 }
 
-.number::after { 
-    content: "";
-    background-color: #5e42b0;
-    height: 4px;
-    width: 15px;
+.number::after {
+  content: "";
+  background-color: #5e42b0;
+  height: 4px;
+  width: 15px;
 }
-/* Не отображается псевдоэлемлент */
+/* Подчеркивание не отображается */
 
 .players-subtitle {
-    font-family: OpenSans-Bold;
-    font-size: 23px;
-    color: #c1c1c1;
-    text-transform: uppercase;
+  font-family: OpenSans-Bold;
+  font-size: 23px;
+  color: #c1c1c1;
+  text-transform: uppercase;
 }
 
 .description {
-    font-family: OpenSans-Regular;
-    font-size: 15px;
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+}
+
+.growth {
+  color: #ffffff;
+}
+
+.players-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+}
+
+.growth-dark .number {
+  color: #9173e6;
+}
+
+.growth-dark .description {
+  color: #ffffff;
+}
+
+.quality-number {
+  position: relative;
+}
+
+.be-active-picture {
+  width: 320px;
+}
+
+.number-block {  
+  box-sizing: border-box;  
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  background-color: #5e42b0;
+  position: absolute;
+  left: 20px;
+  bottom: -12px;  
+}
+
+.qualities .number {
+  color: #ffffff;
+}
+
+.qualities .number::after {
+  content: "";
+  background-color: #8f7bc8;
+  height: 4px;
+  width: 15px;
+}
+
+.slogan-block {
+  box-sizing: border-box;
+  margin-top: 34px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 70px;
+}
+
+.slogan {
+  font-family: OpenSans-Bold;
+  font-size: 28px;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.slogan-description {
+  font-family: OpenSans-Regular;
+  font-size: 16px;
 }
